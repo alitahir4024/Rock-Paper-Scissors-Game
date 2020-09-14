@@ -1,0 +1,128 @@
+/* global css styles */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+  font-family: monospace;
+}
+
+/* default grid and css class */
+.grid {
+  display: grid;
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  grid-template-columns: 50vw;
+  grid-template-rows: 10vh 5vh 13vh 10vh 20vh;
+}
+
+body > h1 {
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 1.3px;
+  font-size: 2.3rem;
+  color: #444444;
+}
+
+.game-table > span {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #323232;
+  letter-spacing: 1.3px;
+}
+
+.btn-row {
+  grid-template-columns: repeat(3, 13vw);
+  grid-template-rows: 8vh;
+}
+
+.btn{
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #323232;
+}
+
+.score-board {
+  grid-template-columns: repeat(2, 13vw);
+  grid-template-rows: 0.99fr;
+}
+
+.score-board > span {
+  justify-items: center;
+}
+
+.score-board > span > h6 {
+  font-weight: normal;
+  font-size: 1.8rem;
+  color: #323232;
+}
+
+.score-board > span > p {
+  font-weight: normal;
+  font-size: 2rem;
+  color: #757575;
+}
+
+/* responsive style for mobile view */
+@media (min-width: 0px) and (max-width: 350px) {
+  body {
+    height: 105vh;
+    grid-template-columns: 80vw;
+    grid-template-rows: 20vh 20vh 20vh 15vh 30vh;
+  }
+
+  body > h1 {
+    letter-spacing: 1.3px;
+    font-size: 2rem;
+    padding-top: 15px;
+  }
+
+  .btn-row {
+    grid-template-columns: repeat(3, 23vw);
+    grid-template-rows: 10vh;
+    justify-content: space-between;
+  }
+}
+
+/* responsive style for tablet view */
+@media (min-width: 351px) and (max-width: 900px) {
+  body {
+    height: 100vh;
+    grid-template-columns: 80vw;
+    grid-template-rows: 10vh 10vh 10vh 5vh 25vh;
+  }
+
+  body > h1 {
+    letter-spacing: 1.3px;
+    font-size: 2.5rem;
+  }
+
+  .btn-row {
+    grid-template-columns: repeat(3, 23vw);
+    grid-template-rows: 10vh;
+    justify-content: space-between;
+  }
+
+  .btn {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .score-board > span > h6,
+  .score-board > span > p {
+    font-size: 2.3rem;
+  }
+}
