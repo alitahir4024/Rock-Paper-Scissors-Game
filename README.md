@@ -17,4 +17,4 @@ A basic rock paper scissors game developed using pure HTML CSS and JavaScript.
 
 ## Project Preview:
 
-( https://ali-tahir4024.github.io/Rock-Paper-Scissors-Game/).
+[Rock Paper Scissors](https://alitahir4024.github.io/Rock-Paper-Scissors-Game/).
